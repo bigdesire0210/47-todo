@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom' // スラッシュ[/]がないとnode_modulesからの物になる
 
 import App from './App'
 

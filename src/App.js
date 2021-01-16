@@ -1,4 +1,4 @@
-import Ract from 'react' // <= 絶対に必要
+import React from 'react' // <= 絶対に必要
 
 const App = () => {
     return (
