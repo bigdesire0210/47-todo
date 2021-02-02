@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const Item = ({ content }) => {
     const [isDone, setIsDone] = useState(false)
-    console.log(isDone)
+    // console.log(isDone)
     // setIsDone(true) =<書き換え可能
     return (
         <li>
@@ -12,14 +12,14 @@ const Item = ({ content }) => {
                 //変更する値は isDone 設定されている真偽値の逆の値
             }} />
 
+            {/* // isDoneがtrueだったら　textDecoration: 'line-through'
+            // isDoneがfalseだったら、textDecoration: 'none' */}
             <span style={
                 { textDecoration: isDone ? 'line-through' : 'none' }
             }>{content}</span>
 
             {/* <span   
-                style={{ textDecoration: 'line-through' }}
-            // isDoneがtrueだったら　textDecoration: 'line-through'
-            // isDoneがfalseだったら、textDecoration: 'none'
+                style={{ textDecoration: 'line-through' }}           
             >{content}</span> */}
         </li >
     )
